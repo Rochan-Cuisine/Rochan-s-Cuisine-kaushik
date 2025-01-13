@@ -31,23 +31,33 @@
   }
   .tpbr{
     position: relative;
-    left: 400px;
-    bottom: 20px;
+    display: flex;
+    gap: 0.2px;
+
 
   }
   @media (max-width: 768px) {
   .tpbr {
-    left: 20px;  /* Adjust left position for mobile */
-    bottom: 10px;  /* Adjust bottom position for mobile */
+    position: relative;
+    right: 15px;  /* Adjust left position for mobile */
+    top: 5px;
+    font-size: 10px;
+    gap: 2px;  /* Adjust bottom position for mobile */
   }
 }
 
 /* Optional: Additional styling for very small devices (like phones in portrait mode) */
 @media (max-width: 480px) {
   .tpbr {
-    left: 10px;  /* Further adjustment if necessary */
-    bottom: 5px;  /* Further adjustment if necessary */
+    right: 20px;  /* Further adjustment if necessary */
+    top: 2px;  /* Further adjustment if necessary */
+    font-size: 5px;
+    
   }
+}
+#header2{
+  top: 70px;
+  background-color: black;
 }
   </style>
 </head>
@@ -123,6 +133,13 @@
       <h1 class="logo me-auto me-lg-0"><a href="index.html">ROCHAN'S CUISINE</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <div class="tpbr" class="contact-info d-flex align-items-center">
+        <i style="font-weight: bolder;" class="bi bi-phone d-flex align-items-center"><span>+91 8123472300</span></i>
+        <i style="font-weight: bolder;" class="bi bi-clock d-flex align-items-center ms-4"><span> Sat & Sun: 10AM -
+            10PM</span></i>
+        <i style="font-weight: bolder;" class="bi bi-clock d-flex align-items-center ms-4"><span> Mon - Fri: 8PM -
+            10PM</span></i>
+      </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -131,7 +148,7 @@
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
 
 
-          <li><a class="nav-link scrollto active" href="#chefs">Chefs</a></li>
+          <li><a class="nav-link scrollto active" href="#chefs">Chef</a></li>
 
 
         </ul>
@@ -141,6 +158,15 @@
 
     </div>
   </header><!-- End Header -->
+  <header id="header2" class="fixed-top d-flex align-items-cente header-scrolled">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -170,20 +196,7 @@
               <img src="assets/img/Brown And Beige Modern Indian Food Chicken Biryani Recipe YouTube Thumbnail.png" alt="">
             </div>
           </div>
-          <div  id="topbar" class="d-flex align-items-center fixed-top topbar-scrolled">
-            <div class="tpbr" class="container d-flex justify-content-center justify-content-md-between">
-        
-              <div  class="contact-info d-flex align-items-center">
-                <i style="font-weight: bolder;" class="bi bi-phone d-flex align-items-center"><span>+91 8123472300</span></i>
-                <i style="font-weight: bolder;" class="bi bi-clock d-flex align-items-center ms-4"><span> Sat & Sun: 10AM -
-                    10PM</span></i>
-                <i style="font-weight: bolder;" class="bi bi-clock d-flex align-items-center ms-4"><span> Mon - Fri: 8PM -
-                    10PM</span></i>
-              </div>
-        
-        
-            </div>
-          </div>
+         
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>Authentic Flavors, Straight from Coorg!</h3>
             <p class="fst-italic">
@@ -218,16 +231,15 @@
           <div class="col-lg-4">
             <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
               <span>01</span>
-              <h4>Lightning-Fast Delivery</h4>
-              <p>Enjoy fresh, homemade meals delivered to your doorstep in record time. Your cravings, satisfied without
-                the wait!</p>
+              <h4>Natural Ingredients from Coorg</h4>
+              <p>We use natural ingredients from Coorg, including coffee, honey, and spices, for authentic, aromatic flavors.</p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
               <span>02</span>
-              <h4>Bulk Orders, No Problem</h4>
+              <h4>Bulk orders? Pre-order today!</h4>
               <p>Whether it’s a family gathering or a corporate event, we’re equipped to handle bulk orders with ease.
               </p>
             </div>
@@ -236,9 +248,8 @@
           <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
               <span>03</span>
-              <h4> Cloud Kitchen Convenience</h4>
-              <p>Operating as a cloud kitchen, we focus on quality, consistency, and delivering flavors that delight
-                every time.</p>
+              <h4> Bake and beat all week.</h4>
+              <p>We accept pre-orders throughout the week exclusively for our Beat & Bake products, ensuring fresh delivery.</p>
             </div>
           </div>
 
@@ -252,7 +263,7 @@
       <div class="container aos-init aos-animate" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Menu</h2>
+          
           <p>Check Our Tasty Menu</p>
 
         </div>
@@ -457,8 +468,8 @@
       <div class="container aos-init aos-animate" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Chefs</h2>
-          <p>Our Proffesional Chefs</p>
+          
+          <p>Our Professional Chef</p>
         </div>
 
         <div class="row">
@@ -540,11 +551,11 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+             
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
+          
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
               <h3><a href="">Find Us Here!</a></h3>

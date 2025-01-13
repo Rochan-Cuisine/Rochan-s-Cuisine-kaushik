@@ -177,17 +177,25 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(12, 11, 9, 0.6);
+  background: rgb(0, 0, 0);
   border-bottom: 1px solid rgba(12, 11, 9, 0.6);
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
+  
 }
+@media (max-width: 768px) {
+  #header {
+    height: 50px; /* Set the height explicitly */
+    padding: 0;   /* Remove or adjust padding to match the height */
+  }
+}
+
+
 
 #header.header-scrolled {
   top: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 100%);
   border-bottom: 1px solid #37332a;
 }
 
@@ -200,6 +208,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 768px) {
+  #header .logo {
+    font-size: 10px; /* Adjust to your desired font size for mobile */
+  }
 }
 
 #header .logo a {
@@ -447,10 +460,11 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/CreamIllustrativeHealthyFoodRecipesYouTubeIntroVideo1-ezgif.com-video-to-gif-converter.gif") top center;
+  background: url("../img/Rochan’s\ Cuisine.gif") top center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  top: 60px;
   padding: 0;
 }
 @media (max-width: 480px) {
@@ -792,8 +806,7 @@ section {
   height: 60px;
   z-index: 1;
   content: '';
-  border-left: 5px solid #040403;
-  border-top: 5px solid #000000;
+  
   transition: .5s;
 }
 
@@ -805,8 +818,7 @@ section {
   height: 60px;
   z-index: 2;
   content: '';
-  border-right: 5px solid #080706;
-  border-bottom: 5px solid #000000;
+  
   transition: .5s;
 }
 
@@ -934,10 +946,13 @@ section {
 }
 
 .menu .menu-img {
-  width: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   float: left;
   border: 5px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  bottom: 20px;
 }
 
 .menu .menu-content {
